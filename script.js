@@ -4,43 +4,62 @@ var number
 var animal
 var verb
 
-adjective = document.getElementById('adjInput').value;
-place = document.getElementById('placeInput').value;
-number = document.getElementById('numbInput').value;
-animal = document.getElementById('animalInput').value;
-verb = document.getElementById('verbInput').value;
+document.getElementById('endResult').style.display = 'none';
 
+function MadLibRandom(){
+    comsole.log(Math.floor(Math.random() * 3));
+}
 
+function MadLib1(){
+    adjective = document.getElementById('adjInput').value;
+    place = document.getElementById('placeInput').value;
+    number = document.getElementById('numbInput').value;
+    animal = document.getElementById('animalInput').value;
+    verb = document.getElementById('verbInput').value;
 
+    if (document.getElementById('adjInput').value == '' || document.getElementById('placeInput').value == '' || document.getElementById('numbInput').value == '' || document.getElementById('animalInput').value == '' || document.getElementById('verbInput').value == ''){
+        alert('You must fill out each text box!');
+        return;
+    }
 
+    document.getElementById('userInput').style.display = 'none';
+    document.getElementById('endResult').style.display = 'block';
 
+    document.getElementById('result').innerHTML = `The party of ${adjective} adventurers were traveling to the next ${place}. On the way there they were attacked by ${number} ${animal}. The adventurers won the battle and proudly ${verb} the rest of the way to the city.`;
+}
 
+function MadLib2(){
+    adjective = document.getElementById('adjInput').value;
+    place = document.getElementById('placeInput').value;
+    number = document.getElementById('numbInput').value;
+    animal = document.getElementById('animalInput').value;
+    verb = document.getElementById('verbInput').value;
 
+    if (document.getElementById('adjInput').value == '' || document.getElementById('placeInput').value == '' || document.getElementById('numbInput').value == '' || document.getElementById('animalInput').value == '' || document.getElementById('verbInput').value == ''){
+        alert('You must fill out each text box!');
+        return;
+    }
 
+    document.getElementById('userInput').style.display = 'none';
+    document.getElementById('endResult').style.display = 'block';
 
+    document.getElementById('result').innerHTML = `22222222222222222222222222222222222222 The party of ${adjective} adventurers were traveling to the next ${place}. On the way there they were attacked by ${number} ${animal}. The adventurers won the battle and proudly ${verb} the rest of the way to the city.`;
+}
 
-// // // // document.getElementById('wordNeeded').innerHTML = 'Enter an adjective below';
+function MadLib3(){
+    adjective = document.getElementById('adjInput').value;
+    place = document.getElementById('placeInput').value;
+    number = document.getElementById('numbInput').value;
+    animal = document.getElementById('animalInput').value;
+    verb = document.getElementById('verbInput').value;
 
-// // // // function SubmitClick(){
-// // // //     if (document.getElementById('wordNeeded').innerHTML == 'Enter an adjective'){
-// // // //         adjective = document.getElementById('varInput').value;
-// // // //         document.getElementById('varInput').value = '';
-// // // //         document.getElementById('wordNeeded').innerHTML = 'Enter a place';
-// // // //     }
-// // // //     // else if (document.getElementById('wordNeeded').innerHTML == 'Enter a place below'){
-// // // //     //     place = document.getElementById('varInput').value;
-// // // //     //     document.getElementById('varInput').value = '';
-// // // //     //     document.getElementById('wordNeeded').innerHTML = 'Enter a number greater than 1';
-// // // //     // }
-// // // // }
+    if (document.getElementById('adjInput').value == '' || document.getElementById('placeInput').value == '' || document.getElementById('numbInput').value == '' || document.getElementById('animalInput').value == '' || document.getElementById('verbInput').value == ''){
+        alert('You must fill out each text box!');
+        return;
+    }
 
-// // // // // console.log(adjective)
-// // // // // console.log(place)
-// // // // // console.log(numb)
-// // // // // console.log(animal)
-// // // // // console.log(verb)
+    document.getElementById('userInput').style.display = 'none';
+    document.getElementById('endResult').style.display = 'block';
 
-
-// // // // // MadLib_1 Function
-// // // // // MadLib_2 Function
-// // // // // MadLib_3 Function
+    document.getElementById('result').innerHTML = `3333333333333333333333333333333333333333333 The party of ${adjective} adventurers were traveling to the next ${place}. On the way there they were attacked by ${number} ${animal}. The adventurers won the battle and proudly ${verb} the rest of the way to the city.`;
+}
