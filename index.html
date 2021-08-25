@@ -10,12 +10,35 @@
 <body>
     <h1>Mad Libs</h1>
 
-    <h3 id="story"></h3>
+    <h2 class="page1">Enter an adjective</h2>
+    <h2 class="page1">Enter a place</h2>
+    <h2 class="page1">Enter a number greater than 1</h2>
 
-    <h2 id="wordNeeded"></h2>
-    <input type="text" id="varInput">
+    <input type="text" id="adjInput" class="page1">
+    <input type="text" id="placeInput" class="page1">
+    <input type="text" id="numbInput" class="page1">
 
-    <button id="submitBtn" onclick="SubmitClick()">Submit</button>
+    <h2 class="page1">Enter an animal (plural)</h2>
+    <h2 class="page1">Enter a verb (past tense)</h2>
+
+    <input type="text" id="animalInput" class="page1">
+    <input type="text" id="verbInput" class="page1">
+
+    <h2 class="page1">Choose an option below after filling out the boxes above</h2>
+
+    <button id="randomBtn" class="page1" onclick="">Random Mad Lib</button>
+
+    <p id="template1" class="page1">The party of [adjective] adventurers were traveling to the next [place]. On the way there they were attacked by [number greater than 1] [animal (plural)]. The adventurers won the battle and proudly [verb (past tense)] the rest of the way to the city.</p>
+    <p id="template2" class="page1">The party of [adjective] adventurers were traveling to the next [place]. On the way there they were attacked by [number greater than 1] [animal (plural)]. The adventurers won the battle and proudly [verb (past tense)] the rest of the way to the city.</p>
+    <p id="template3" class="page1">The party of [adjective] adventurers were traveling to the next [place]. On the way there they were attacked by [number greater than 1] [animal (plural)]. The adventurers won the battle and proudly [verb (past tense)] the rest of the way to the city.</p>
+
+    <button id="madLib1" class="page1" onclick="">Mad Lib 1</button>
+    <button id="madLib2" class="page1" onclick="">Mad Lib 2</button>
+    <button id="madLib3" class="page1" onclick="">Mad Lib 3</button>
+
+    <h3 id="result" class="page2"></h3>
+
+    <button id="restartBtn" class="page2" onclick="">Restart</button>
 
     <script src="script.js"></script>
 </body>
