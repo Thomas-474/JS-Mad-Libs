@@ -2,7 +2,7 @@ Mad Lib 1:
     The party of (adjective: courageous) adventurers were traveling to the next (place: city). On the way there they were attacked by (number greater than 1: 5) (animal (plural): wolves). The adventurers won the battle and proudly (verb (past tense): walked) the rest of the way to the city.
 
 Mad Lib 2:
-    ...
+    continue from the last story
 
 Mad Lib 3:
     ...
