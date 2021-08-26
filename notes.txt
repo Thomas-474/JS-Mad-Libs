@@ -1,8 +1,8 @@
 Mad Lib 1:
-    The party of (adjective: courageous) adventurers were traveling to the next (place: city). On the way there they were attacked by (number greater than 1: 5) (animal (plural): wolves). The adventurers won the battle and proudly (verb (past tense): walked) the rest of the way to the city.
+    The party of (adjective: courageous) adventurers were traveling to the next (place: city). On the way there they were attacked by (number greater than 1: 5) (creature (plural): wolves). The adventurers won the battle and proudly (verb (past tense): walked) the rest of the way to the city.
 
 Mad Lib 2:
-    continue from the last story
+    The adventurers entered the (place: city). The (place: city) was (adjective: huge) and had a population of around (number greater than 1: 20,000) people. The adventurers left their (creature (plural): horses) at a stable and (verb (past tense): explored) the (place: city).
 
 Mad Lib 3:
-    ...
+    Suddenly, while the adventurers were exploring the (place: city), (number greater than 1: 3) ((creature (plural): dragons) flew down from the sky and (verb (past tense): attacked) the (place: city). The (adjective: brave) adventurers fought off the ((creature (plural): dragons) and saved the (place: city).
