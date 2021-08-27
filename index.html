@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Mad Libs</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>Mad Libs</h1>
+    <h1 id="headingTitle">Mad Libs</h1>
  
-   <div id="userInput">
-       <div id="adjContainer">
-           <h2>Enter an adjective</h2>
-           <input type="text" id="adjInput" class="variable">
-       </div>
+    <!-- User input for words and which Mad Lib is chosen -->
+    <div id="userInput">
+        <div id="adjContainer">
+            <h2>Enter an adjective</h2>
+            <input type="text" id="adjInput" class="variable">
+        </div>
+
+        <div id="placeContainer">
+            <h2>Enter a place</h2>
+            <input type="text" id="placeInput" class="variable">
+        </div>
+    
+        <div id="numbContainer">
+            <h2>Enter a number greater than 1</h2>
+            <input type="text" id="numbInput" class="variable">
+        </div>
  
-       <div id="placeContainer">
-           <h2>Enter a place</h2>
-           <input type="text" id="placeInput" class="variable">
-       </div>
-      
-       <div id="numbContainer">
-           <h2>Enter a number greater than 1</h2>
-           <input type="text" id="numbInput" class="variable">
-       </div>
+        <div id="creatureContainer">
+            <h2>Enter an creature (plural)</h2>
+            <input type="text" id="creatureInput" class="variable">
+        </div>
+
+        <div id="verbContainer">
+            <h2>Enter a verb (past tense)</h2>
+            <input type="text" id="verbInput" class="variable">
+        </div>
  
-       <div id="creatureContainer">
-           <h2>Enter an creature (plural)</h2>
-           <input type="text" id="creatureInput" class="variable">
-       </div>
+        <h2 id="instructUser">Choose an option below after filling out the text boxes above</h2>
  
-       <div id="verbContainer">
-           <h2>Enter a verb (past tense)</h2>
-           <input type="text" id="verbInput" class="variable">
-       </div>
+        <button id="randomBtn" onclick="MadLibRandom()">Random Mad Lib</button>
  
-       <h2>Choose an option below after filling out the text boxes above</h2>
+        <div id="option1">
+            <p id="template1">The party of [adjective] adventurers were traveling to the next [place]. On the way there they were attacked by [number greater than 1] [creature (plural)]. The adventurers won the battle and proudly [verb (past tense)] the rest of the way to the next city.</p>
+            <button id="madLib1" onclick="MadLib1()">Mad Lib 1</button>
+        </div>
+
+        <div id="option2">
+            <p id="template2">The adventurers entered the [place]. The [place] was [adjective] and had a population of around [number greater than 1] people. The adventurers left their [creature (plural)] at a stable and [verb (past tense)] the [place].</p>
+            <button id="madLib2" onclick="MadLib2()">Mad Lib 2</button>
+        </div>
+
+        <div id="option3">
+            <p id="template3">Suddenly, while the adventurers were exploring the [place], [number greater than 1] [creature (plural)] flew down from the sky and [verb (past tense)] the [place]. The [adjective] adventurers fought off the [creature (plural)] and saved the [place].</p>
+            <button id="madLib3" onclick="MadLib3()">Mad Lib 3</button>
+        </div>
+    </div>
+    
+    <!-- The Mad Lib chosen with the words chosen written in -->
+    <div id="endResult">
+        <p id="result"></p>
  
-       <button id="randomBtn" onclick="MadLibRandom()">Random Mad Lib</button>
+        <button id="restartBtn" onclick="location.reload()">Restart</button>
+    </div>
  
-       <div id="option1">
-           <p id="template1">The party of [adjective] adventurers were traveling to the next [place]. On the way there they were attacked by [number greater than 1] [creature (plural)]. The adventurers won the battle and proudly [verb (past tense)] the rest of the way to the city.</p>
-           <button id="madLib1" onclick="MadLib1()">Mad Lib 1</button>
-       </div>
- 
-       <div id="option2">
-           <p id="template2">The adventurers entered the [place]. The [place] was [adjective] and had a population of around [number greater than 1] people. The adventurers left their [creature (plural)] at a stable and [verb (past tense)] the [place].</p>
-           <button id="madLib2" onclick="MadLib2()">Mad Lib 2</button>
-       </div>
- 
-       <div id="option3">
-           <p id="template3">Suddenly, while the adventurers were exploring the [place], [number greater than 1] [creature (plural)] flew down from the sky and [verb (past tense)] the [place]. The [adjective] adventurers fought off the [creature (plural)] and saved the [place].</p>
-           <button id="madLib3" onclick="MadLib3()">Mad Lib 3</button>
-       </div>
-   </div>
- 
-   <div id="endResult">
-       <h3 id="result"></h3>
- 
-       <button id="restartBtn" onclick="location.reload()">Restart</button>
-   </div>
- 
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
